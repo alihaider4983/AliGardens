@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        <!-- CSS only -->
+ 
+    <title>Ali's Garden</title>
+    <link rel="stylesheet" href="buy.css">
+
+    <script>
+        function stickyMenu() {
+            var sticky = document.getElementById('sticky');
+            if (window.pageYOffset > 220) {
+                sticky.classList.add('sticky');
+            }
+            else {
+                sticky.classList.remove('sticky');
+            }
+            window.onscroll = function () {
+                stickyMenu();
+            }
+        }
+    </script>
+
+
+
+</head>
+
+<body>
+    <div class="parallax">
+        <div class="page_title">Eat Fresh</div>
+    </div>
+    <div class="menu" id="sticky">
+        <ul class="menu-ul">
+            <a href="index.html" class="a-menu">
+                <li>Home</li>
+            </a>
+            <a href="#Deals" class="a-menu">
+                <li>Deals</li>
+            </a>
+            <a href="#fruits" class="a-menu">
+                <li>Fruits</li>
+            </a>
+            <!-- <a href="#" class="a-menu">
+                <li>Ticket</li>
+            </a> -->
+            <a href="#" class="a-menu">
+                <li>Cart</li>
+            </a>
+
+        </ul>
+        <div class="search-box">
+            <form>
+                <input type="text" placeholder="search.." name="search" class="search-input" />
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <a href="#fruits">
+            <div class="categories">
+                <img src="images/mango.jpg" class="item-image">
+                <div class="image-title">Fruits</div>
+            </div>
+        </a>
+
+        <a href="#deals">
+            <div class="categories">
+                <img src="images/deal.jpg" class="item-image">
+                <div class="image-title">Deals</div>
+            </div>
+        </a>
+        <!-- <a href="#ticket">
+            <div class="categories">
+                <img src="images/ticket.jpg" class="item-image">
+                <div class="image-title">Ticket</div>
+            </div>
+        </a> -->
+        <div class="deals-container" id="deals">
+            <div class="parallax">
+                <div class="title">DEALS</div>
+                <div class="deal ">
+                    save 20% on min purchase of 2000rs on mangoos</br>
+                    <button>
+                        <div class="coupon-btn">Add coupen</div>
+                    </button>
+                </div>
+
+                <div class="deal">
+                    save 10% on min purchase of 1000rs on Ticket</br>
+                    <button>
+                        <div class="coupon-btn">Add coupen</div>
+                    </button>
+                </div>
+
+            </div>
+            <div class="deals-container" id="fruits">
+                <div class="parallax">
+                    <div class="title">Fruits</div>
+                </div>
+                <div class="items">
+                    <div class="images"><img src="images/sindhri.jpg" class="item-image-size"></div>
+
+                    <div class="discription">
+                        <b>Sindhri</b></br>
+                        <div class="item-select">
+                            price: 120/killograms
+                        </div>
+                        <label>Qty:</label>
+                        <select class="item-select">
+                            <option>1 killograms</option>
+                            <option>2 killograms</option>
+                            <option>5 killograms</option>
+                            <option>10 killograms</option>
+                            <option>more</option>
+                        </select><br />
+                        <button class="buynow-btn">Buy Now</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="items">
+                <div class="images"><img src="images/Chaunsa.png" class="item-image-size"></div>
+
+                <div class="discription">
+                    <b>Sufaid-chuansa</b></br>
+                    <div class="item-select">
+                        price: 200/killograms
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1 killograms</option>
+                        <option>2 killograms</option>
+                        <option>5 killograms</option>
+                        <option>10 killograms</option>
+                        <option>more</option>
+                    </select><br />
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="items">
+                <div class="images"><img src="images/bchausna.jpeg" class="item-image-size"></div>
+
+                <div class="discription">
+                    <b>Kala_chuansa</b></br>
+                    <div class="item-select">
+                        price: 180/killograms
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1 killograms</option>
+                        <option>2 killograms</option>
+                        <option>5 killograms</option>
+                        <option>10 killograms</option>
+                        <option>more</option>
+                    </select><br />
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+
+
+
+            <div class="items">
+                <div class="images"><img src="images/lime.jpg" class="item-image-size"></div>
+
+                <div class="discription">
+                    <b>Mithri</b></br>
+                    <div class="item-select">
+                        price: 150/killograms
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1 killograms</option>
+                        <option>2 killograms</option>
+                        <option>5 killograms</option>
+                        <option>10 killograms</option>
+                        <option>more</option>
+                </div>
+                </select><br />
+                <button class="buynow-btn">Buy Now</button>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="parallax1">
+        <div class="footer">
+            <div class="quick-links">
+                <div>location</div>
+                <ul>
+                    <li><a href="https://goo.gl/maps/yqYGenG24dmb74Nr9" class="a-links">Address: Basti Rekra</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    <div class= "Help-link">
+        <ul>
+            <a href="" class="a-links">Help</a>
+        </ul>
+
+    </div>
+    <div class="copyrights">
+        <i class="far fa-copyright"></i>2021 by Ali Haider
+    </div>
+</body>
+
+</html>
